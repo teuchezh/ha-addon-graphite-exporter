@@ -1,7 +1,7 @@
 name: "Graphite Exporter"
 version: "1.0.0"
 slug: "graphite_exporter"
-description: "Экспорт данных Home Assistant в Graphite"
+description: "Export data"
 arch:
   - amd64
   - armv7
