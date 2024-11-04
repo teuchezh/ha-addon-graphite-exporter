@@ -7,8 +7,5 @@ arch:
   - armv7
   - aarch64
 startup: "services"
-boot: "auto"
-options: {}
-schema: {}
 ports:
   9108/tcp: 9108
