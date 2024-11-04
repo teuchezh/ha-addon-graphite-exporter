@@ -1,20 +1,14 @@
-# https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
-name: Example add-on
-version: "1.2.0"
-slug: example
-description: Example add-on
-url: "https://github.com/home-assistant/addons-example/tree/main/example"
+name: "Graphite Exporter"
+version: "1.0.0"
+slug: "graphite_exporter"
+description: "Экспорт данных Home Assistant в Graphite"
 arch:
-  - armhf
-  - armv7
-  - aarch64
   - amd64
-  - i386
-init: false
-map:
-  - share:rw
-options:
-  message: "Hello world..."
-schema:
-  message: "str?"
-image: "ghcr.io/home-assistant/{arch}-addon-example"
+  - armv7
+  - arm64
+startup: "services"
+boot: "auto"
+options: {}
+schema: {}
+ports:
+  9108/tcp: 9108
